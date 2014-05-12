@@ -20,6 +20,34 @@
 /* #Page Styles
 ================================================== */
 
+/*.Center-Container.is-Table { 
+	display: table; 
+	position: relative;
+}
+
+.is-Table .Table-Cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.is-Table .Center-Block {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}*/
+
+
+.coming_soon {
+  bottom: 0;
+  height: 300px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 500px;
+}
+
 #wrapper {
 	margin-left: 0px;
 }
@@ -54,15 +82,39 @@
 	padding-right: 10px;
 }
 
+.absolute_center {
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+
+}
+
+.is-Transformed {
+  width: 50%;
+  margin: auto;
+  position: absolute;
+  top: 50%; left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+.coming_soon {
+	display: table;
+	text-align: center;
+}
+
 
 .splash {
 	background: #00a79d;
 	text-align: center;
 	width: 100%;
-	padding-top: 150px;
-	height: auto !important;
 	min-height: 100%;
-	position: relative;
+	height: auto !important;
+	padding: 0 auto;
+	margin: 0 auto;
+	position: absolute;
+	vertical-align: center;
 	color: white;
 }
 
@@ -115,120 +167,120 @@
 	height: 150px;
 	margin: 0 auto;
 	color: #3c3c3c;
-}.role_box:hover {
-	border-width: 3px;
-	position: relative;
-	color: #3c3c3c;
-}
-
-
-/* Tablet Portrait size to standard 960 (devices and browsers) */
-
-    @media only screen and (min-width: 768px) and (max-width: 959px) {
-        .role_box                { font-size: 90%; min-height: 175px; height: 175px;}
-}  
-
-
-.mini_story  {
-	text-align: left;
-	border:solid #3c3c3c;
-	border-width:2px;
-	padding: 20px;
-	margin-bottom: 20px;
+	}.role_box:hover {
+		border-width: 3px;
+		position: relative;
 		color: #3c3c3c;
-} .mini_story:hover {
-	border-width: 3px;
-	position: relative;
-	font-size: 105%;
+	}
+
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		.role_box                { font-size: 90%; min-height: 175px; height: 175px;}
+	}  
+
+
+	.mini_story  {
+		text-align: left;
+		border:solid #3c3c3c;
+		border-width:2px;
+		padding: 20px;
+		margin-bottom: 20px;
 		color: #3c3c3c;
-}
+		} .mini_story:hover {
+			border-width: 3px;
+			position: relative;
+			font-size: 105%;
+			color: #3c3c3c;
+		}
 
-.image_role {
-	float: left;
-	padding-right: 10px;
-}
+		.image_role {
+			float: left;
+			padding-right: 10px;
+		}
 
-.image_menu {
-	float: left;
-	vertical-align: center;
-}
-.confirm_page {
+		.image_menu {
+			float: left;
+			vertical-align: center;
+		}
+		.confirm_page {
 
-	text-align: center;
-	padding-top: 150px;
-	margin: 0 auto;
-	max-width: 680px;
-}
+			text-align: center;
+			padding-top: 150px;
+			margin: 0 auto;
+			max-width: 680px;
+		}
 
-#character_edit_box, #char_profile_box, .story_box, #story_edit_box {
-	border: solid #c0c0c0;
-	border-width: 1px;
-	padding: 20px;
-	margin: 0 auto;
-	margin-bottom: 20px;
-	max-width: 800px;
-	border-radius: 4px;
-	position: relative;
-	overflow: hidden;
-}
+		#character_edit_box, #char_profile_box, .story_box, #story_edit_box {
+			border: solid #c0c0c0;
+			border-width: 1px;
+			padding: 20px;
+			margin: 0 auto;
+			margin-bottom: 20px;
+			max-width: 800px;
+			border-radius: 4px;
+			position: relative;
+			overflow: hidden;
+		}
 
 
-#story_display {
-	margin: 0 auto;
-	margin-bottom: 20px;
-	max-width: 800px;
-	position: relative;
-}
-.story_box {
-	padding-bottom: 0;
-	background: #fff;
-}
+		#story_display {
+			margin: 0 auto;
+			margin-bottom: 20px;
+			max-width: 800px;
+			position: relative;
+		}
+		.story_box {
+			padding-bottom: 0;
+			background: #fff;
+		}
 
-.char_explore_box  {
-	text-align: left;
-	border: solid #c0c0c0;
-	border-width: 1px;
-	padding: 20px;
-	min-height: 175px;
-	margin-bottom: 20px;
-	border-radius: 4px;
-}
+		.char_explore_box  {
+			text-align: left;
+			border: solid #c0c0c0;
+			border-width: 1px;
+			padding: 20px;
+			min-height: 175px;
+			margin-bottom: 20px;
+			border-radius: 4px;
+		}
 
-.story_edit {
-	margin: 0 auto;
+		.story_edit {
+			margin: 0 auto;
 
-}
-.extra_content {
-/*	overflow: hidden; */
-}
+		}
+		.extra_content {
+			/*	overflow: hidden; */
+		}
 
-.link_area {
-	padding: 20px 0 20px 0;
-	text-align: center;
-	color: white;
-}
+		.link_area {
+			padding: 20px 0 20px 0;
+			text-align: center;
+			color: white;
+		}
 
-.edit_buttons {
-	margin: 0 auto;
-	max-width: 800px;
-	color: inherit;
-	position: relative;
-}
+		.edit_buttons {
+			margin: 0 auto;
+			max-width: 800px;
+			color: inherit;
+			position: relative;
+		}
 
-.titles {
-	margin: 0 auto;
-	max-width: 800px;
-	padding-bottom: 10px;
-	color: #00a79d;
-}
+		.titles {
+			margin: 0 auto;
+			max-width: 800px;
+			padding-bottom: 10px;
+			color: #00a79d;
+		}
 
-.contribute {
-	padding: 50px 0 50px 0;
-	text-align: center;
-	min-height: 600px;
-	background: #3c3c3c;
-	color: white;
-}
+		.contribute {
+			padding: 50px 0 50px 0;
+			text-align: center;
+			min-height: 600px;
+			background: #3c3c3c;
+			color: white;
+		}
 
 
 

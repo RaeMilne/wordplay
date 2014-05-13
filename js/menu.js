@@ -11,11 +11,17 @@
 	+ "<div class='menu'>"
 	+ "<ul>"
 	+ "<a href='index.html'><li>INTRO</li></a>"
+	+"<li><hr></li>"
 	+ "<a href='01_main.html'><li>HOME</li></a>"
+	+"<li><hr></li>"
 	+ "<a href='02a_roleplay.html'><li>Roleplay</li></a>"
+	+"<li><hr></li>"
 	+ "<a href='03a_story_select.html'><li>Write</li></a>"
+	+"<li><hr></li>"
 	+ "<a href='04a_magazine.html'><li>Read</li></a>"
+	+"<li><hr></li>"
 	+ "<a href=''><li>Drafts</li></a>"
+	+"<li><hr></li>"
 	+ "</ul>"
 	+ "</div>";
 

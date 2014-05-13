@@ -57,17 +57,17 @@
 	padding-top: 150px;
 }
 
-.coming_soon {
+.coming_soon, .about_wordplay {
   bottom: 0;
-  height: 300px;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: table;
-  width: 800px;
+  padding: 50px 0 50px 0;
+  width: 100%;
   text-align: center;
+  background-color:#00a79d;
+}
+
+.about_wordplay {
+
+	background-color: white;
 }
 
 #wrapper {
@@ -79,7 +79,7 @@
 	margin-left: -300px;
 	z-index: 200;
 	padding: 20px;
-	background: #3c3c3c;
+	background: black;
 	width: 300px;
 	height: 100%;
 	color: white;
@@ -104,15 +104,14 @@
 }
 
 .view_characters {
-	background: #fff;
+	background: #e5e5e5;
 	min-height: 600px;
 	padding: 50px 0 50px 0;
 	text-align: center;
-
 }
 
 .explore_stories {
-	background: #e5e5e5;
+	background: #fff;	
 	min-height: 600px;
 	padding: 50px 0 50px 0;
 	text-align: center;
@@ -124,7 +123,15 @@
 	min-height: 600px;
 	padding: 50px 0 50px 0;
 	text-align: center;
+		
 }
+
+.explore_classics .story_box {
+border: solid #3c3c3c;
+
+
+}
+
 
 .browse_archive {
 	background: #3c3c3c;
@@ -132,6 +139,7 @@
 	padding: 50px 0 50px 0;
 	text-align: center;
 	color: white;
+
 }
 
 
@@ -253,7 +261,6 @@
 		.story_box, .char_explore_box {
 			padding-bottom: 0;
 			text-align: left;
-			border: solid #3c3c3c;
 			border-width: 2px;
 		}
 

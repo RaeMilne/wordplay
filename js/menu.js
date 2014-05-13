@@ -10,15 +10,12 @@
 
 	+ "<div class='menu'>"
 	+ "<ul>"
-	+ "<a href='01_index.html'><li>HOME</li></a>"
-	+ "<a href=''><li>PROFILE</li></a>"
-	+ "<a href=''><li>Settings</li></a>"
-	+ "<a href=''><li>Drafts</li></a>"
+	+ "<a href='index.html'><li>INTRO</li></a>"
+	+ "<a href='01_main.html'><li>HOME</li></a>"
 	+ "<a href='02a_roleplay.html'><li>Roleplay</li></a>"
 	+ "<a href='03a_story_select.html'><li>Write</li></a>"
-	+ "<a href='04_story_explore.html'><li>Read</li></a>"
-	+ "<a href='06a_remix_intro.html'><li>Remix</li></a>"
-	+ "<a href=''><li>Archive</li></a>"
+	+ "<a href='04a_magazine.html'><li>Read</li></a>"
+	+ "<a href=''><li>Drafts</li></a>"
 	+ "</ul>"
 	+ "</div>";
 

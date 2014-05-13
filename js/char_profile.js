@@ -40,10 +40,11 @@
 			}
 		}
 
+		var header = "<h1>" + results.characters[charNum].char_name + "</h1></div>";
+
 		var profile = 
 
-		"<div class='titles'><h2>" + results.characters[charNum].char_name + "</h2></div>"
-		+"<h5>CURRENT LOCATION</h5>"
+		"<h5>CURRENT LOCATION</h5>"
 		+"<p>" + results.characters[charNum].setting_place + " " + results.characters[charNum].setting_time + "</p>"
 		+"<p></p>"
 		+"<h5>BACKSTORY</h5>"
@@ -56,6 +57,8 @@
 		+"<p>" + results.characters[charNum].interests +"</p>";
 
 		htmlString = profile;
+
+		$('#char_header').html(header);
 
 		$('#char_profile_box').html(htmlString);
 

@@ -250,7 +250,7 @@ h2 {
 	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
 
 
-	hr { margin: 20px -20px 20px -20px; border: solid #c0c0c0; border-width: 1px 0 0; clear: both;  height: 0;}
+	hr { margin: 20px -20px 20px -20px; border: solid #3c3c3c; border-width: 1px 0 0; clear: both;  height: 0;}
 
 
 
@@ -324,9 +324,27 @@ a, a:visited {
 	font-style: italic;
 	font-size: 18px;
 	text-decoration: none; border-bottom: 2px dotted; 
+	font-color: #40beb4;
 }
-a:hover, a:focus { color: #00a79d; }
+a:hover, a:focus { color: #f6931f; }
 p a, p a:visited { line-height: inherit; font: inherit;}
+
+.char_explore_box a, .story_box a {
+	color: #00a79d;
+	font-style: normal;
+	border-bottom: none;
+}
+
+ .char_explore_box a:hover, .story_box a:hover {
+	color: #f6931f;
+	border-bottom: none;
+}
+
+.char_explore_box h2 a, .story_box h2 a {
+
+	color: #3c3c3c;
+	border-bottom: 2px dotted;
+}
 
 a li { 
 	color: #fff; 

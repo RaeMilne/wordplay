@@ -11,7 +11,7 @@
 	function displayStory(results) {
 
 		/*var numStories = results.stories.length;*/
-		var numStories = 3;
+		var numStories = results.stories.length;
 		var numChars = results.characters.length;
 		var elements = [];
 		var element;
@@ -40,17 +40,14 @@
 			var storySubset = results.stories[i].story_text.substr(0,150);
 
 			element = "<div class='heading'>";
-			element += "<h2>" + results.stories[i].story_title + "</h2>";
+			element += "<h2><a href='04b_story_read.html" + "?id=" + storyID + "'>" + results.stories[i].story_title + "</a></h2>";
 			element += "<h6>Written by <a href=''>" + results.stories[i].author + "</a></h6>";
 			element += "<br>";
 			element += "<p>" + storySubset + " ... </p>";
 			//element += "<p><em>" + results.stories[i].story_summary + "</em></p>";
 			element += "</div>";
 
-			
-
 			element += "<div class='extra_content'>";
-			element += "<a href='04b_story_view.html" + "?id=" + storyID + "'><p><em>" + "Read Entire Story</p></em></a>";
 			element += "<hr class='line'>";
 			element += "<h5>CHARACTERS</h5>";
 			element +=  "<a href='05b_character_profile.html" + "?id=" + charID + "'><p class='box'>" + results.stories[i].main_char + "</p></a>";
@@ -84,13 +81,26 @@
 			elements.push(element);
 		}
 
+
+		var storyNum1 = (Math.floor(Math.random()*numStories));
+		var storyNum2 = (Math.floor(Math.random()*numStories));
+		
+		while (storyNum2 == storyNum1) {
+			var storyNum2 = (Math.floor(Math.random()*numStories));
+		}
+
+		var storyNum3 = (Math.floor(Math.random()*numStories));
+
+		while (storyNum3 == storyNum2 || storyNum3 == storyNum1) {
+			var storyNum3 = (Math.floor(Math.random()*numStories));
+		}
+
 		htmlString="";
 
-		for (var i = 0; i < numStories; i++) {
-
-			htmlString+="<div class='story_box'>" + elements[i] + "</div>";
-		}
-		
+		htmlString+="<div class='story_box'>" + elements[storyNum1] + "</div>";
+		htmlString+="<div class='story_box'>" + elements[storyNum2] + "</div>";
+		htmlString+="<div class='story_box'>" + elements[storyNum3] + "</div>";
+	
 		//add assembled string to the DOM
 		$('#story_display').html(htmlString);
 		$(".extra_content").hide();

@@ -15,8 +15,6 @@
 		var element;
 		var htmlString;
 
-		var storyNum = (Math.floor(Math.random()*numResults));
-
 		for (var i = 0; i < numResults; i++ ) {
 
 			var charSubset = results.characters[i].backstory.substr(0,150);
@@ -25,14 +23,25 @@
 			//element += "<img src='./images/50_white/" + results[i].W_IMG + "'/>";;
 			
 			element = "<div class='char_explore_box'>" + "<h5>" + results.characters[i].role + "</h5>";
-			element += "<h2>" + results.characters[i].char_name + "</h2>";
+			element +=  "<h2><a href='05b_character_profile.html" + "?id=" + results.characters[i].char_id + "'>" + results.characters[i].char_name + "</a></h2>";
 			element += "<p>" + charSubset + "... </p><p>" + "</div>";
 
 			elements.push(element);
 
 		}
 
-		console.log(elements);
+		var storyNum1 = (Math.floor(Math.random()*numResults));
+		var storyNum2 = (Math.floor(Math.random()*numResults));
+
+		if (storyNum2 == storyNum1) {
+			var storyNum2 = (Math.floor(Math.random()*numResults));
+		}
+
+		var storyNum3 = (Math.floor(Math.random()*numResults));
+
+		if (storyNum3 == storyNum2 || storyNum3 == storyNum1) {
+			var storyNum3 = (Math.floor(Math.random()*numResults));
+		}
 
 		// join the strings from the array, adding a div around each html string
 		// alternate for simple add:
@@ -41,24 +50,9 @@
 
 		htmlString="";
 
-		var numChars = 3;
-
-		for (var i = 0; i < numChars; i++ ) {
-
-			if (i % 3 === 0 ) {
-
-				htmlString += "<div class='one-third column alpha'>" + elements[i] + "</div>";
-
-			} else if ((i - 2) % 3 === 0) {
-
-				htmlString += "<div class='one-third column omega'>" + elements[i]+ "</div>";
-
-			} else {
-
-				htmlString += "<div class='one-third column'>" + elements[i] + "</div>";
-			}
-
-		}
+		htmlString += "<div class='one-third column alpha'>" + elements[storyNum1] + "</div>";
+		htmlString += "<div class='one-third column'>" + elements[storyNum2] + "</div>";
+		htmlString += "<div class='one-third column omega'>" + elements[storyNum3]+ "</div>";
 
 		//add assembled string to the DOM
 		$('#char_display').html(htmlString);

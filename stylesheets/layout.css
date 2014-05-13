@@ -36,10 +36,7 @@
   text-align: center;
 }*/
 
-.coming_soon {
-	display: table;
-	text-align: center;
-}
+
 
 .splash {
 	background: #00a79d;
@@ -68,7 +65,9 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 500px;
+  display: table;
+  width: 800px;
+  text-align: center;
 }
 
 #wrapper {
@@ -242,6 +241,7 @@
 			border-radius: 4px;
 			position: relative;
 			overflow: hidden;
+			padding-bottom: 50px;
 		}
 
 		#story_display {

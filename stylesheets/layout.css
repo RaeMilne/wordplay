@@ -36,6 +36,29 @@
   text-align: center;
 }*/
 
+.coming_soon {
+	display: table;
+	text-align: center;
+}
+
+.splash {
+	background: #00a79d;
+	text-align: center;
+	width: 100%;
+	min-height: 100%;
+	height: auto !important;
+	padding: 0 auto;
+	margin: 0 auto;
+	position: absolute;
+	vertical-align: center;
+	color: white;
+}
+
+.intro {
+	text-align: center;
+	min-height: 600px;
+	padding-top: 150px;
+}
 
 .coming_soon {
   bottom: 0;
@@ -72,6 +95,48 @@
 	background: transparent;
 }
 
+.magazine_header {
+	background: #00a79d;
+	min-height: 300px;
+	height: 300px;
+	text-align: center;
+	padding: 50px 0 50px 0;
+	color: white;
+}
+
+.view_characters {
+	background: #fff;
+	min-height: 600px;
+	padding: 50px 0 50px 0;
+	text-align: center;
+
+}
+
+.explore_stories {
+	background: #e5e5e5;
+	min-height: 600px;
+	padding: 50px 0 50px 0;
+	text-align: center;
+
+}
+
+.explore_classics {
+	background: #bfbfbf;
+	min-height: 600px;
+	padding: 50px 0 50px 0;
+	text-align: center;
+}
+
+.browse_archive {
+	background: #3c3c3c;
+	min-height: 600px;
+	padding: 50px 0 50px 0;
+	text-align: center;
+	color: white;
+}
+
+
+
 .mini_menu {
 	color: #c0c0c0;
 }
@@ -80,48 +145,6 @@
 	float:left;
 	padding-left: 0px;
 	padding-right: 10px;
-}
-
-.absolute_center {
-	margin: auto;
-	position: absolute;
-	top: 0; left: 0; bottom: 0; right: 0;
-
-}
-
-.is-Transformed {
-  width: 50%;
-  margin: auto;
-  position: absolute;
-  top: 50%; left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
-}
-
-.coming_soon {
-	display: table;
-	text-align: center;
-}
-
-
-.splash {
-	background: #00a79d;
-	text-align: center;
-	width: 100%;
-	min-height: 100%;
-	height: auto !important;
-	padding: 0 auto;
-	margin: 0 auto;
-	position: absolute;
-	vertical-align: center;
-	color: white;
-}
-
-.intro {
-	text-align: center;
-	min-height: 600px;
-	padding-top: 150px;
 }
 
 .page_head {
@@ -149,7 +172,6 @@
 	color: white;
 }
 
-
 .featured {
 	padding: 50px 0 50px 0;
 	text-align: center;
@@ -173,13 +195,11 @@
 		color: #3c3c3c;
 	}
 
-
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
 		.role_box                { font-size: 90%; min-height: 175px; height: 175px;}
 	}  
-
 
 	.mini_story  {
 		text-align: left;
@@ -212,7 +232,7 @@
 			max-width: 680px;
 		}
 
-		#character_edit_box, #char_profile_box, .story_box, #story_edit_box {
+		#character_edit_box, #char_profile_box, .story_box, #story_edit_box, .char_explore_box, .archive_box {
 			border: solid #c0c0c0;
 			border-width: 1px;
 			padding: 20px;
@@ -224,30 +244,35 @@
 			overflow: hidden;
 		}
 
-
 		#story_display {
 			margin: 0 auto;
 			margin-bottom: 20px;
 			max-width: 800px;
 			position: relative;
 		}
-		.story_box {
+		.story_box, .char_explore_box {
 			padding-bottom: 0;
-			background: #fff;
+			text-align: left;
+			border: solid #3c3c3c;
+			border-width: 2px;
 		}
 
 		.char_explore_box  {
 			text-align: left;
-			border: solid #c0c0c0;
-			border-width: 1px;
-			padding: 20px;
 			min-height: 175px;
-			margin-bottom: 20px;
-			border-radius: 4px;
 		}
 
 		.story_edit {
 			margin: 0 auto;
+
+		}
+
+		.archive_box {
+
+			border: solid #fff;
+			color: white;
+			text-align: center;
+			height: 120px;
 
 		}
 		.extra_content {
@@ -282,8 +307,6 @@
 			color: white;
 		}
 
-
-
 /*
 
 .footer {
@@ -295,8 +318,6 @@
     width:100%;
     height:20px;
     } */
-
-
 
 
 /* #Media Queries

@@ -113,6 +113,12 @@ h1.splasher {
 	padding: 0px;
 }
 
+h1.archive {
+
+	font-family: "adelle-sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+
 
 h2 { 
 	font-family: "adelle", "Georgia", "Times New Roman", serif;

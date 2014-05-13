@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<script type="text/javascript" src="//use.typekit.net/ogj3tif.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+	<title>First Person</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS
+	================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+
+
+<!-- Primary Page Layout
+	================================================== -->
+
+	<section class="page_head">
+
+		<div class="container">
+
+			<div class="sixteen columns">
+
+				<h1>Write A Scene</h1>
+				<h4>Craft a scene around an important event or milestone in the story.</h4>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<div class="container">
+
+		<div class="edit_buttons">
+			<a href="03f_story_confirm.html" class="blue-h_button">PUBLISH</a>
+			<a href="" class="grey-h_button">SAVE DRAFT</a>
+		</div>
+
+	</div>
+
+
+	<section class="story_edit">
+
+		<div class="container">
+			<div id="story_edit_box"></div>
+		</div>
+
+	</section>
+
+	<div id="slide_menu"></div>
+
+</div>
+
+<script src="./js/vendor/jquery-1.11.0.min.js"></script>
+<script>
+
+(function ($) {
+
+	var htmlString;
+
+	var element;
+
+	var placeholder = 
+	"<div class='edit' style='min-height:400px'>"
+	+ "<h2>Edit Title</h2>"
+	+ "<p>Craft a scene around an important milestone or moment in the story, describe the setting in detail, or a dig a little deeper into your character’s backstory.</p></div>";
+
+	var extraContent =
+
+	"<div class='extra_content'>"
+	+ "<hr class='line'>"
+	+ "<h5>CHARACTERS</h5>"
+	+ "<p class='box'>" 
+	+ "Cynthia Wong" 
+	+ "</p>"
+	+ "<hr>"
+	+ "<h5>TAGS</h5>"
+	+ "<h6 class='tag'>#TRANSFORMATION</h6> <h6 class='tag'>#METROPOLIS</h6>"
+	+ "</div>";
+
+	htmlString = placeholder + extraContent;
+
+	$('#story_edit_box').html(htmlString);
+
+	$('#story_edit_box').on('click', function() {
+
+		var outline =
+
+		"<p>The only thing I know about my dad is his favorite brand of cigarettes. Or, at least, his favorite brand circa 1951, the year he left my mom, me, and my two sisters."
+
+		+"I found all of the packs he never got to smoke in a neat cardboard box in a drawer in the garage. The one with all of the nails, assorted hammers, and one nested pair of shears. A little box with the word “November 24” scrawled on top in black marker in unrecognizable handwriting. Writing that’s nothing like my mom’s careful cursive, Vivian’s efficient capitals, Annie’s loops and curls. I’ve started smoking them."
+
+		+"They taste heavy and to the point–like his handwriting.</p>";
+
+		htmlString = outline;
+
+		$('#story_edit_box').fadeOut(200, function(){
+			$('#story_edit_box').html(htmlString);
+			$('#story_edit_box').fadeIn(200);
+		})
+	})
+}(window.jQuery));
+
+</script>
+
+<script src="./js/menu.js"></script>
+
+
+
+<!-- End Document
+	================================================== -->
+</body>
+</html>

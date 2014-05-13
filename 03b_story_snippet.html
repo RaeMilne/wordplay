@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<script type="text/javascript" src="//use.typekit.net/ogj3tif.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+	<title>First Person</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS
+	================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+
+<!-- Primary Page Layout
+	================================================== -->
+
+	<section class="page_head">
+
+		<div class="container">
+
+			<div class="sixteen columns">
+
+				<h1>Write A Snippet</h1>
+				<h4>Write a few short and snappy sentences or juicy lines of dialogue.</h4>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<div class="container">
+
+		<div class="edit_buttons">
+			<a href="" class="grey-h_button">SAVE DRAFT</a>
+			<a href="03f_story_confirm.html" class="blue-h_button">PUBLISH</a>
+		</div>
+
+	</div>
+
+
+	<section class="story_edit">
+
+		<div class="container">
+			<div id="story_edit_box"></div>
+
+		</div>
+
+	</section>
+
+	<div id="slide_menu"></div>
+
+</div>
+
+	<script src="./js/vendor/jquery-1.11.0.min.js"></script>
+
+	<script>
+
+	(function ($) {
+
+		var htmlString;
+
+		var element;
+
+		var placeholder = 
+		"<h2 class='edit'>Edit Title</h2>"
+		+ "<p class='edit'>Write your short and snappy snippet here.</p>";
+
+		var extraContent =
+
+			"<div class='extra_content'>"
+			+ "<hr class='line'>"
+			+ "<h5>CHARACTERS</h5>"
+			+ "<p class='box'>" 
+			+ "Gigi (The Sidekick)" 
+			+ "</p>"
+			+ "<hr>"
+			+ "<h5>TAGS</h5>"
+			+ "<h6 class='tag'>#TRANSFORMATION</h6> <h6 class='tag'>#METROPOLIS</h6>"
+			+ "</div>";
+
+		htmlString = placeholder + extraContent;
+
+		$('#story_edit_box').html(htmlString);
+
+		$('#story_edit_box').on('click', function() {
+
+			var gigi = 
+
+			"<h2>A Night Out</h2>"
+			+"<p>I waved wildly at Nina as she sped away,"
+			+ " fighting down bittersweet tears as her cab disappeared around the corner.</p>";
+
+
+			htmlString = gigi + extraContent;
+
+			$('#story_edit_box').fadeOut(200, function(){
+				$('#story_edit_box').html(htmlString);
+				$('#story_edit_box').fadeIn(200);
+			})
+		})
+	}(window.jQuery));
+
+	</script>
+
+	<script src="./js/menu.js"></script>
+
+
+<!-- End Document
+	================================================== -->
+</body>
+</html>

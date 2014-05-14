@@ -34,285 +34,305 @@
   width: 50%;
   margin: 0 auto;
   text-align: center;
-}*/
+  }*/
 
 
 
-.splash {
-	background: #00a79d;
-	text-align: center;
-	width: 100%;
-	min-height: 100%;
-	height: auto !important;
-	padding: 0 auto;
-	margin: 0 auto;
-	position: absolute;
-	vertical-align: center;
-	color: white;
-}
+  .splash {
+  	background: #00a79d;
+  	text-align: center;
+  	width: 100%;
+  	min-height: 100%;
+  	height: auto !important;
+  	padding: 0 auto;
+  	margin: 0 auto;
+  	position: absolute;
+  	vertical-align: center;
+  	color: white;
+  }
 
-.intro {
-	text-align: center;
-	min-height: 600px;
-	padding-top: 150px;
-}
+  .intro {
+  	text-align: center;
+  	min-height: 600px;
+  	padding-top: 150px;
+  }
 
-.coming_soon, .about_wordplay {
-  bottom: 0;
-  padding: 50px 0 50px 0;
-  width: 100%;
-  text-align: center;
-  background-color:#00a79d;
-}
+  .coming_soon, .about_wordplay {
+  	bottom: 0;
+  	padding: 50px 0 20px 0;
+  	width: 100%;
+  	text-align: center;
+  	background-color:#00a79d;
+  }
 
-.about_wordplay {
+  .about_wordplay {
+  	background: white;
+  	text-align: center;
+  	margin: 0 auto;
 
-	background-color: white;
-}
+  }
 
-#wrapper {
-	margin-left: 0px;
-}
-.menu {
-	position: absolute;
-	top: 0;
-	margin-left: -300px;
-	z-index: 200;
-	padding: 20px;
-	background: black;
-	width: 300px;
-	height: 100%;
-	color: white;
-}
+  .about_rae {
+  	margin: 0 auto;
+  	padding: 0 0 50px 0;
 
-.menu_button {
-	position:absolute;
-	top: 10px;
-	right: 10px;
-	z-index:100;
-	padding: 0;
-	background: transparent;
-}
-
-.magazine_header {
-	background: #00a79d;
-	min-height: 300px;
-	height: 300px;
-	text-align: center;
-	padding: 50px 0 50px 0;
-	color: white;
-}
-
-.view_characters {
-	background: #e5e5e5;
-	min-height: 600px;
-	padding: 50px 0 50px 0;
-	text-align: center;
-}
-
-.explore_stories {
-	background: #fff;	
-	min-height: 600px;
-	padding: 50px 0 50px 0;
-	text-align: center;
-
-}
-
-.explore_classics {
-	background: #bfbfbf;
-	min-height: 600px;
-	padding: 50px 0 50px 0;
-	text-align: center;
-		
-}
-
-.explore_classics .story_box {
-border: solid #3c3c3c;
-
-
-}
-
-
-.browse_archive {
-	background: #3c3c3c;
-	min-height: 600px;
-	padding: 50px 0 50px 0;
-	text-align: center;
-	color: white;
-
-}
+  }
 
 
 
-.mini_menu {
-	color: #c0c0c0;
-}
+  #wrapper {
+  	margin-left: 0px;
+  }
+  .menu {
+  	position: absolute;
+  	top: 0;
+  	margin-left: -300px;
+  	z-index: 200;
+  	padding: 20px;
+  	background: black;
+  	width: 300px;
+  	height: 100%;
+  	color: white;
+  }
 
-.mini_menu h6 {
-	float:left;
-	padding-left: 0px;
-	padding-right: 10px;
-}
+  .menu_button {
+  	position:absolute;
+  	top: 10px;
+  	right: 10px;
+  	z-index:100;
+  	padding: 0;
+  	background: transparent;
+  }
 
-.page_head {
-	text-align: center;
-	min-height: 200px;
-	padding-top: 80px;
-	background: #3c3c3c;
-	color: white;
-}
+  .magazine_header {
+  	background: #00a79d;
+  	min-height: 300px;
+  	height: 300px;
+  	text-align: center;
+  	padding: 50px 0 50px 0;
+  	color: white;
+  }
 
-.page_head h1, .explore_head h1 {
-	padding-bottom: 0px;
-}
+  .view_characters {
+  	background: #e5e5e5;
+  	min-height: 600px;
+  	padding: 50px 0 50px 0;
+  	text-align: center;
+  }
 
-.image_3 {
-	opacity: 0.75;
-	padding: 50px 0 50px 0;
-}
+  .explore_stories {
+  	background: #fff;	
+  	min-height: 600px;
+  	padding: 50px 0 50px 0;
+  	text-align: center;
 
-.explore_head {
-	text-align: center;
-	min-height: 200px;
-	padding-top: 80px;
-	background: #40beb4;
-	color: white;
-}
+  }
 
-.featured {
-	padding: 50px 0 50px 0;
-	text-align: center;
-	min-height: 600px;
-	background: #40beb4;
-	color: white;
-}
+  .explore_classics {
+  	background: #bfbfbf;
+  	min-height: 600px;
+  	padding: 50px 0 50px 0;
+  	text-align: center;
 
-.role_box {
-	text-align: left;
-	border:solid #3c3c3c;
-	border-width:2px;
-	padding: 20px;
-	min-height: 150px;
-	height: 150px;
-	margin: 0 auto;
-	color: #3c3c3c;
-	}.role_box:hover {
-		border-width: 3px;
-		position: relative;
-		color: #3c3c3c;
-	}
 
-	/* Tablet Portrait size to standard 960 (devices and browsers) */
+  }
 
-	@media only screen and (min-width: 768px) and (max-width: 959px) {
-		.role_box                { font-size: 90%; min-height: 175px; height: 175px;}
-	}  
 
-	.mini_story  {
-		text-align: left;
-		border:solid #3c3c3c;
-		border-width:2px;
-		padding: 20px;
-		margin-bottom: 20px;
-		color: #3c3c3c;
-		} .mini_story:hover {
-			border-width: 3px;
-			position: relative;
-			font-size: 105%;
-			color: #3c3c3c;
-		}
 
-		.image_role {
-			float: left;
-			padding-right: 10px;
-		}
+  .explore_classics .story_box {
+  	border: solid #3c3c3c;
+  	border-width: 2px;
 
-		.image_menu {
-			float: left;
-			vertical-align: center;
-		}
-		.confirm_page {
+  }
 
-			text-align: center;
-			padding-top: 150px;
-			margin: 0 auto;
-			max-width: 680px;
-		}
 
-		#character_edit_box, #char_profile_box, .story_box, #story_edit_box, .char_explore_box, .archive_box {
-			border: solid #c0c0c0;
-			border-width: 1px;
-			padding: 20px;
-			margin: 0 auto;
-			margin-bottom: 20px;
-			max-width: 800px;
-			border-radius: 4px;
-			position: relative;
-			overflow: hidden;
-			padding-bottom: 50px;
-		}
+  .browse_archive {
+  	background: #3c3c3c;
+  	min-height: 600px;
+  	padding: 50px 0 50px 0;
+  	text-align: center;
+  	color: white;
 
-		#story_display {
-			margin: 0 auto;
-			margin-bottom: 20px;
-			max-width: 800px;
-			position: relative;
-		}
-		.story_box, .char_explore_box {
-			padding-bottom: 0;
-			text-align: left;
-			border-width: 2px;
-		}
+  }
 
-		.char_explore_box  {
-			text-align: left;
-			min-height: 175px;
-		}
 
-		.story_edit {
-			margin: 0 auto;
 
-		}
+  .mini_menu {
+  	color: #c0c0c0;
+  }
 
-		.archive_box {
+  .mini_menu h6 {
+  	float:left;
+  	padding-left: 0px;
+  	padding-right: 10px;
+  }
 
-			border: solid #fff;
-			color: white;
-			text-align: center;
-			height: 120px;
+  .page_head {
+  	text-align: center;
+  	min-height: 200px;
+  	padding-top: 80px;
+  	background: #3c3c3c;
+  	color: white;
+  }
 
-		}
-		.extra_content {
-			/*	overflow: hidden; */
-		}
+  .page_head h1, .explore_head h1 {
+  	padding-bottom: 0px;
+  }
 
-		.link_area {
-			padding: 20px 0 20px 0;
-			text-align: center;
-			color: white;
-		}
+  .image_3 {
+  	opacity: 0.75;
+  	padding: 50px 0 50px 0;
+  }
 
-		.edit_buttons {
-			margin: 0 auto;
-			max-width: 800px;
-			color: inherit;
-			position: relative;
-		}
+  .explore_head {
+  	text-align: center;
+  	min-height: 200px;
+  	padding-top: 80px;
+  	background: #40beb4;
+  	color: white;
+  }
 
-		.titles {
-			margin: 0 auto;
-			max-width: 800px;
-			padding-bottom: 10px;
-			color: #00a79d;
-		}
+  .featured {
+  	padding: 50px 0 50px 0;
+  	text-align: center;
+  	min-height: 600px;
+  	background: #40beb4;
+  	color: white;
+  }
 
-		.contribute {
-			padding: 50px 0 50px 0;
-			text-align: center;
-			min-height: 600px;
-			background: #3c3c3c;
-			color: white;
-		}
+  .role_box {
+  	text-align: left;
+  	border:solid #3c3c3c;
+  	border-width:2px;
+  	padding: 20px;
+  	min-height: 150px;
+  	height: 150px;
+  	margin: 0 auto;
+  	color: #3c3c3c;
+  	}.role_box:hover {
+  		border-width: 3px;
+  		position: relative;
+  		color: #3c3c3c;
+  	}
+
+  	/* Tablet Portrait size to standard 960 (devices and browsers) */
+
+  	@media only screen and (min-width: 768px) and (max-width: 959px) {
+  		.role_box                { font-size: 90%; min-height: 175px; height: 175px;}
+  	}  
+
+  	.mini_story  {
+  		text-align: left;
+  		border:solid #3c3c3c;
+  		border-width:2px;
+  		padding: 20px;
+  		margin-bottom: 20px;
+  		color: #3c3c3c;
+  		} .mini_story:hover {
+  			border-width: 3px;
+  			position: relative;
+  			font-size: 105%;
+  			color: #3c3c3c;
+  		}
+
+  		.image_role {
+  			float: left;
+  			padding-right: 10px;
+  		}
+
+  		.image_menu {
+  			float: left;
+  			vertical-align: center;
+  		}
+  		.confirm_page {
+
+  			text-align: center;
+  			padding-top: 150px;
+  			margin: 0 auto;
+  			max-width: 680px;
+  		}
+
+  		#character_edit_box, #char_profile_box, .story_box, #story_edit_box, .char_explore_box, .archive_box {
+  			border: solid #c0c0c0;
+  			border-width: 1px;
+  			padding: 20px;
+  			margin: 0 auto;
+  			margin-bottom: 20px;
+  			max-width: 800px;
+  			border-radius: 4px;
+  			position: relative;
+  			overflow: hidden;
+  			padding-bottom: 50px;
+  		}
+
+  		#story_display {
+  			margin: 0 auto;
+  			margin-bottom: 20px;
+  			max-width: 800px;
+  			position: relative;
+  		}
+  		.story_box, .char_explore_box {
+  			padding-bottom: 0;
+  			text-align: left;
+  			border-width: 2px;
+  		}
+
+  		.story_box:hover {
+
+  			cursor: pointer;
+  			cursor: hand;
+
+  		}
+
+  		.char_explore_box  {
+  			text-align: left;
+  			min-height: 175px;
+  		}
+
+  		.story_edit {
+  			margin: 0 auto;
+
+  		}
+
+  		.archive_box {
+
+  			border: solid #fff;
+  			color: white;
+  			text-align: center;
+  			height: 120px;
+
+  		}
+  		.extra_content {
+  			/*	overflow: hidden; */
+  		}
+
+  		.link_area {
+  			padding: 20px 0 20px 0;
+  			text-align: center;
+  			color: white;
+  		}
+
+  		.edit_buttons {
+  			margin: 0 auto;
+  			max-width: 800px;
+  			color: inherit;
+  			position: relative;
+  		}
+
+  		.titles {
+  			margin: 0 auto;
+  			max-width: 800px;
+  			padding-bottom: 10px;
+  			color: #00a79d;
+  		}
+
+  		.contribute {
+  			padding: 50px 0 50px 0;
+  			text-align: center;
+  			min-height: 600px;
+  			background: #3c3c3c;
+  			color: white;
+  		}
 
 /*
 

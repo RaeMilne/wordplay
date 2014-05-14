@@ -20,8 +20,9 @@
 	+"<li><hr></li>"
 	+ "<a href='04a_magazine.html'><li>Read</li></a>"
 	+"<li><hr></li>"
-	+ "<a href=''><li>Drafts</li></a>"
+	+ "<a href='06_story_build.html'><li>Drafts</li></a>"
 	+"<li><hr></li>"
+	+ "<a href='http://wordplaystories.com/wordplay-process-festival.pdf'><li>Process</li></a>"
 	+ "</ul>"
 	+ "</div>";
 

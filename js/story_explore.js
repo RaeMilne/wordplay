@@ -40,8 +40,8 @@
 			var storySubset = results.stories[i].story_text.substr(0,150);
 
 			element = "<div class='heading'>";
+			element += "<h5>Written by <a href=''>" + results.stories[i].author + "</a></h5>";
 			element += "<h2><a href='04b_story_read.html" + "?id=" + storyID + "'>" + results.stories[i].story_title + "</a></h2>";
-			element += "<h6>Written by <a href=''>" + results.stories[i].author + "</a></h6>";
 			element += "<br>";
 			element += "<p>" + storySubset + " ... </p>";
 			//element += "<p><em>" + results.stories[i].story_summary + "</em></p>";
@@ -57,7 +57,6 @@
 			element += "<hr>";
 			element += "<h5>CONTRIBUTORS</h5>"
 			element += "<a href=''><p class='box'>" +results.stories[i].contributors + "</p></a>";
-			element += "<br>";
 
 			element+="<hr>";
 

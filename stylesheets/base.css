@@ -208,6 +208,20 @@ h2 {
 
 		}
 
+		p.intro_main {
+
+			/*font-family: "adelle", "Georgia", "Times New Roman", serif;*/
+
+			font-family: "adelle-sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 48px;
+			font-size: 36px;
+			text-align: left;
+
+
+		}
+
 		p.confirm {
 			font-family: "adelle-sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 			font-weight: 400;
@@ -323,11 +337,15 @@ a, a:visited {
 	font-weight: 700;
 	font-style: italic;
 	font-size: 18px;
-	text-decoration: none; border-bottom: 2px dotted; 
+	text-decoration: none; border-bottom: 1.5px dotted; 
 	font-color: #40beb4;
 }
 a:hover, a:focus { color: #f6931f; }
 p a, p a:visited { line-height: inherit; font: inherit;}
+
+.about_rae p a,.about_rae a:visited {color: #00a79d; border: none;}
+
+
 
 .char_explore_box a, .story_box a {
 	color: #00a79d;
@@ -342,8 +360,8 @@ p a, p a:visited { line-height: inherit; font: inherit;}
 
 .char_explore_box h2 a, .story_box h2 a {
 
-	color: #3c3c3c;
-	border-bottom: 2px dotted;
+	color: inherit;
+	border-bottom: none;
 }
 
 a li { 
